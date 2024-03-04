@@ -1,0 +1,29 @@
+.layout {
+  height: 100%;
+  position: relative;
+}
+
+.layout .background {
+  width: 100%;
+  z-index: 0;
+  position: absolute;
+  height: 100%;
+}
+.layout .mobile-background {
+  display: none;
+}
+
+@media screen and (max-width: 500px) {
+  .layout .mobile-background {
+    display: block;
+    top: 0;
+    left: 0;
+    position: absolute;
+    height: 100%;
+    width: 100vw;
+  }
+
+  .layout .background {
+    display: none;
+  }
+}
